@@ -1,0 +1,55 @@
+body {
+    background: rgb(176, 193, 164)
+}
+
+#element {
+    background: yellow;
+    height: 350px;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 32px;
+}
+
+#line_container {
+    padding-left: 145px;
+    padding-top: 145px;
+    position: relative;
+    margin: auto;
+    align-self: center;
+}
+
+.bar {
+    background: white;
+    width: 65px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 32px;
+    position: absolute;
+}
+ 
+#bar1 {
+    animation: mymove 5s;
+    position: absolute;
+    background: red;
+}
+
+#bar2 {
+    margin-top: 20px;
+    position: absolute;
+    background: yellow;
+}
+
+#bar3 {
+    margin-top: 40px;
+    position: absolute;
+    background: blue;
+}
+
+@keyframes mymove {
+    0% {margin-top: 0px;}
+    25% {margin-top: 20px;}
+    50% {margin-top: 20px; transform: rotate(0deg);}
+    100% {transform: rotate(45deg) translate(0, 25px);}
+}
